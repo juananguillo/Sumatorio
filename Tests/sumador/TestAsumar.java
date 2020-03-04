@@ -15,7 +15,9 @@ class TestAsumar {
 
 	@Test
 	void test() {
-		fail("No implementado aun");
+		Asumar sumi = new Asumar();
+        String resultado = sumi.mostrar("8");
+        assertEquals("8 = 8",resultado );
 	}
 
 }
