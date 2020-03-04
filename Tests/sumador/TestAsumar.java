@@ -15,7 +15,9 @@ class TestAsumar {
 
 	@Test
 	void test() {
-		fail("No implementado aun");
+		Asumar suma = new Asumar();
+        String resultado = suma.negativo("-8");
+        assertEquals("",resultado );
 	}
 
 }
