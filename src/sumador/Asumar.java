@@ -5,16 +5,29 @@ package sumador;
  *
  */
 public class Asumar {
-
 	/**
 	 *Constructor sin parametros
 	 */
 	public Asumar() {}
 	
-	 /**
+	/**
 	 * @param cad
-	 * @return El numero si solo tiene un digito
+	 * @return Cadena vacia si el primer valor del String es -
 	 */
+	public String negativo(String cad) {
+        String numero = cad;
+        if (numero.substring(0,1).equals("-")) {
+        	
+           numero="";
+        }
+        
+        return numero;
+	}
+
+	/**
+	 *Constructor sin parametros
+	 */
+	
 	public String mostrar(String cad) {
 	        String numero = cad;
 	        if (numero.length() == 1) {
