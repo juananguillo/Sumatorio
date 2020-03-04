@@ -15,7 +15,10 @@ class TestAsumar {
 
 	@Test
 	void test() {
-		fail("No implementado aun");
+		Asumar suma = new Asumar();
+        int resultado = suma.sumatorio("523");
+        assertEquals(10,resultado );
+        
 	}
 
 }
