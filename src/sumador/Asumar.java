@@ -1,20 +1,40 @@
 package sumador;
 
+/**
+ * @author Juan
+ *
+ */
 public class Asumar {
 
+	/**
+	 * Constructor sin parametros
+	 */
 	public Asumar() {}
 	
-	public int sumatorio(String numero) {
+	/**
+	 * @param numero
+	 * @return el resultado de la suma y los numeros que se han sumado
+	 */
+	public String sumatorio(int numero) {
         int suma = 0;
+        
+ 
+		
+		  StringBuilder sumatorio = new StringBuilder();
+		while(numero > 0) {
 
-        for (int i = 0; i < numero.length(); i++) {
-          
-            String digito = numero.substring(i, 1);
-            suma = suma + Integer.getInteger(digito);
+            suma += numero % 10;
+         sumatorio.append(Integer.toString(numero%10)+"+");	
+            numero = numero / 10;
+            
+
         }
-       
-        return suma;
-
+		
+		sumatorio.reverse();
+		sumatorio.delete(0, 1);
+			
+		return sumatorio.toString()+"="+suma;
     }	
+	}
 	
-}
+

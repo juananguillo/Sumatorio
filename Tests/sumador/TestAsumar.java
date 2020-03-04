@@ -16,8 +16,8 @@ class TestAsumar {
 	@Test
 	void test() {
 		Asumar suma = new Asumar();
-        int resultado = suma.sumatorio("523");
-        assertEquals(10,resultado );
+        String resultado = suma.sumatorio(234);
+        assertEquals("2+3+4=9",resultado );
         
 	}
 
